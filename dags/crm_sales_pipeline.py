@@ -15,7 +15,7 @@ from etl.dbt_runner import run_dbt_models, run_dbt_tests
 PROJECT_ROOT = Path("/usr/local/airflow")
 
 default_args = {
-    "owner": "shaan",
+    "owner": "Anil Sharma",
     "retries": 3,
     "retry_delay": timedelta(minutes=1),
 }

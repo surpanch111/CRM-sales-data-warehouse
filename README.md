@@ -7,7 +7,7 @@
 [![Airflow](https://img.shields.io/badge/Airflow-Astro-red.svg)](https://www.astronomer.io/)
 
 [![GitHub Stars](https://img.shields.io/github/stars/Shaan-alpha/CRM-Sales-Warehouse?style=for-the-badge&color=ffd700)](https://github.com/Shaan-alpha/CRM-Sales-Warehouse/stargazers)
-[![GitHub Sponsor](https://img.shields.io/badge/Sponsor-Pink?style=for-the-badge&logo=githubsponsors&logoColor=white&color=ea4aaa)](https://github.com/sponsors/Shaan-alpha)
+[![GitHub Sponsor](https://img.shields.io/badge/Sponsor-Pink?style=for-the-badge&logo=githubsponsors&logoColor=white&color=ea4aaa)](https://github.com/sponsors/surpanch111)
 
 > [!NOTE]
 
@@ -197,4 +197,4 @@ We enforce high data standards at every step:
 - **License**: [MIT](LICENSE)
 
 ---
-*Built with ❤️ by Shaan*
+*Built with ❤️ by Anil Sharma*
