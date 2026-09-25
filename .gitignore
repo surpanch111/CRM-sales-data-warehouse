@@ -1,0 +1,48 @@
+# Environment & secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Claude Code
+.claude/settings.local.json
+
+# Data — keep folders, ignore contents
+data/raw/*
+data/staging/*
+data/archive/*
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/archive/.gitkeep
+
+# Power BI — keep .pbix tracked as the project deliverable
+
+# Docker volumes
+postgres_data/
+pgadmin_data/
+
+# IDEs
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Airflow
+airflow.db
+airflow.cfg
+webserver_config.py

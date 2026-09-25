@@ -1,0 +1,50 @@
+name-template: 'v$RESOLVED_VERSION 🚀'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '📊 Data Models & Marts'
+    labels:
+      - 'dbt'
+      - 'model'
+      - 'sql'
+  - title: '⚙️ Orchestration & Airflow'
+    labels:
+      - 'airflow'
+      - 'dag'
+      - 'etl'
+  - title: '🐛 Bug Fixes & Data Quality'
+    labels:
+      - 'fix'
+      - 'bug'
+      - 'quality'
+  - title: '🧰 Infrastructure & Docker'
+    labels:
+      - 'docker'
+      - 'infra'
+      - 'chore'
+  - title: '📖 Documentation & BI'
+    labels:
+      - 'docs'
+      - 'powerbi'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+      - 'breaking'
+  minor:
+    labels:
+      - 'minor'
+      - 'feature'
+      - 'dbt'
+      - 'airflow'
+  patch:
+    labels:
+      - 'patch'
+      - 'fix'
+      - 'bug'
+      - 'chore'
+      - 'docs'
+  default: patch
+template: |
+  ## What's New in CRM + Sales Warehouse 📈🐘
+  $CHANGES

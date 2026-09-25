@@ -1,0 +1,46 @@
+name: CRM Warehouse CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Install Airflow
+        run: |
+          pip install "apache-airflow==3.3.1"
+
+      - name: Run Ruff Linter
+        run: |
+          ruff check .
+
+      - name: Run Pytest
+        env:
+          PYTHONPATH: .
+        run: |
+          pytest
+
+      - name: Validate DAG Imports
+        env:
+          PYTHONPATH: .
+        run: |
+          python -c "import dags.crm_sales_pipeline"

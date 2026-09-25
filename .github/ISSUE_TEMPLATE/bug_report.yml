@@ -1,0 +1,65 @@
+name: 🐛 Bug Report
+description: Report an issue with the Airflow DAGs, dbt models, or ETL scripts
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue with CRM + Sales Warehouse! Please provide as much context as possible so we can reproduce and resolve it quickly.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Component
+      description: Which part of the data platform is experiencing the bug?
+      options:
+        - Airflow DAGs / Astro CLI
+        - Python ETL Scripts (extract.py, load_staging.py, etc.)
+        - dbt Core SQL Models & Macros
+        - PostgreSQL Staging / Database Container
+        - Power BI Report (.pbix)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Bug
+      description: A clear and concise description of what the bug is.
+      placeholder: E.g., When running 'astro dev start', the postgres container fails to mount the initialization scripts...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Run command '...'
+        2. Check logs at '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Include relevant environment details (Docker version, Astro CLI version, OS, etc.).
+      value: |
+        - **OS**: 
+        - **Docker Version**: 
+        - **Astro CLI Version**: 
+        - **dbt Version**: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Log Output or Screenshots
+      description: Please copy and paste any relevant logs, stack traces, or screenshots here.
+      render: shell
