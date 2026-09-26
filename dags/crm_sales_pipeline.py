@@ -28,7 +28,7 @@ with DAG(
     catchup=False,
     tags=["crm", "etl", "warehouse"],
 ) as dag:
-
+# this are the tasks that will be executed in the DAG
     init_warehouse = PythonOperator(
         task_id="init_warehouse",
         python_callable=init_main,
