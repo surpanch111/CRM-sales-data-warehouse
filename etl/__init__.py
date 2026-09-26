@@ -1,1 +1,1 @@
-"""ETL package for the CRM + Sales pipeline."""
+"""ETL packages for the CRM + Sales Data pipeline."""
