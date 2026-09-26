@@ -1,6 +1,6 @@
 # CRM + Sales Warehouse: End-to-End Data Platform
 
-[![CRM Warehouse CI](https://github.com/surpanch111/CRM-Sales-Warehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/surpanch111/CRM-Sales-Warehouse/actions/workflows/ci.yml)
+[![CRM Warehouse CI](https://github.com/surpanch111/CRM-sales-data-warehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/surpanch111/CRM-sales-data-warehouse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![dbt](https://img.shields.io/badge/dbt-1.10.0-orange.svg)](https://www.getdbt.com/)
@@ -93,14 +93,14 @@ The project is fully containerized, providing a consistent environment for all s
 | **Containers** | [Docker Desktop](https://www.docker.com/products/docker-desktop/) | ✅ Active |
 
 #### Pipeline Success in Airflow
-![Airflow DAG Success](docs/screenshots/10-airflow-dag-success.png)
+![Airflow DAG dashboard showing a green successful pipeline run for the CRM and sales warehouse workflow, with completed tasks and a fully executed end-to-end data process](docs/screenshots/10-airflow-dag-success.png)
 *Visualizing the successful execution of the end-to-end extraction and transformation pipeline.*
 
 #### Infrastructure Stack in Docker
-![Docker Desktop Dashboard](docs/screenshots/09-docker-desktop-full.png)
+![Docker Desktop dashboard displaying the full containerized data platform stack, including the Airflow scheduler, worker, database, and supporting services running in a clean development environment](docs/screenshots/09-docker-desktop-full.png)
 *The full containerized stack including scheduler, worker, and database services.*
 
-![Docker Containers List](docs/screenshots/08-docker-containers.png)
+![Docker containers list showing active services for the CRM sales warehouse platform, with the database, scheduler, and supporting containers running together in the local environment](docs/screenshots/08-docker-containers.png)
 *Detailed view of the active service containers.*
 
 ---
@@ -111,20 +111,20 @@ The final output is a high-impact, 5-page executive report.
 
 ### 1. Executive Overview
 Won revenue, win rate, average deal size, and at-risk pipeline at a glance. Monthly trend and full pipeline funnel side by side.
-![Executive Overview](docs/screenshots/01-executive-overview.png)
+![Executive Overview dashboard with KPI cards for won revenue, win rate, average deal size, and at risk pipeline, plus a monthly trend chart and funnel view for the overall sales pipeline](docs/screenshots/01-executive-overview.png)
 
 ### 2. Agent Performance
 Detailed breakdown of sales agent efficiency and manager-level performance.
-![Agent Performance](docs/screenshots/02-agent-performance.png)
+![Agent performance dashboard comparing sales representatives and managers, with efficiency metrics, conversion trends, and performance summaries across the team](docs/screenshots/02-agent-performance.png)
 
 ### 3. Pipeline Analysis
 Visualizing sales stages, stall rates, and conversion funnels to identify bottlenecks.
-![Pipeline Analysis](docs/screenshots/03-pipeline-analysis.png)
+![Pipeline analysis dashboard showing sales stages, stall rates, conversion funnels, and bottleneck indicators across the customer journey](docs/screenshots/03-pipeline-analysis.png)
 
 ### 4. Product Deep Dive & Regional Analysis
 Analysis of product performance and geographic revenue distribution.
-![Product Deep Dive](docs/screenshots/04-product-deep-dive.png)
-![Regional Analysis](docs/screenshots/05-regional-analysis.png)
+![Product deep dive dashboard highlighting product revenue, performance trends, and category comparisons across the sales portfolio](docs/screenshots/04-product-deep-dive.png)
+![Regional analysis dashboard showing geographic sales distribution, revenue by location, and market performance across regions](docs/screenshots/05-regional-analysis.png)
 
 ---
 
@@ -133,7 +133,7 @@ Analysis of product performance and geographic revenue distribution.
 ### 🗄️ Data Warehouse Schema
 The database is structured using a star schema for optimal query performance. Dimensions `warehouse.dim_account`, `warehouse.dim_product`, `warehouse.dim_sales_agent` and `warehouse.dim_date` support the central `warehouse.fact_sales`.
 
-![SQLTools Database View](docs/screenshots/07-sql-tools-schema.png)
+![SQLTools database view of the analytics schema, showing the warehouse star schema with dimension tables and fact tables organized for CRM and sales analysis](docs/screenshots/07-sql-tools-schema.png)
 *Exploration of the `analytics` schema and dimension tables within VS Code SQLTools.*
 
 | Layer | Technology | Description |
