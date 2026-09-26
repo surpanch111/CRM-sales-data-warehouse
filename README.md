@@ -1,12 +1,12 @@
 # CRM + Sales Warehouse: End-to-End Data Platform
 
-[![CRM Warehouse CI](https://github.com/shaan-alpha/CRM-Sales-Warehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/shaan-alpha/CRM-Sales-Warehouse/actions/workflows/ci.yml)
+[![CRM Warehouse CI](https://github.com/surpanch111/CRM-Sales-Warehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/surpanch111/CRM-Sales-Warehouse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![dbt](https://img.shields.io/badge/dbt-1.10.0-orange.svg)](https://www.getdbt.com/)
 [![Airflow](https://img.shields.io/badge/Airflow-Astro-red.svg)](https://www.astronomer.io/)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Shaan-alpha/CRM-Sales-Warehouse?style=for-the-badge&color=ffd700)](https://github.com/Shaan-alpha/CRM-Sales-Warehouse/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/surpanch111/CRM-Sales-Warehouse?style=for-the-badge&color=ffd700)](https://github.com/surpanch111/CRM-Sales-Warehouse/stargazers)
 [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-Pink?style=for-the-badge&logo=githubsponsors&logoColor=white&color=ea4aaa)](https://github.com/sponsors/surpanch111)
 
 > [!NOTE]
