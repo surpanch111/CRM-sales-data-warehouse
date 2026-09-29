@@ -5,7 +5,7 @@
 -- ============================================================
 
 -- ---------- Check 1: minimum row counts (catches empty loads) ----------
-SELECT 'staging.accounts is empty'        AS check_name, NULL::TEXT AS detail
+SELECT 'staging.accounts is empty'        AS check_name,  NULL::TEXT AS detail
 WHERE (SELECT COUNT(*) FROM staging.accounts) = 0
 UNION ALL
 SELECT 'staging.products is empty', NULL
@@ -87,6 +87,7 @@ WHERE deal_stage NOT IN ('Won', 'Lost', 'Engaging', 'Prospecting')
 GROUP BY deal_stage
 
 -- ---------- Check 9: close_value should be non-negative ----------
+-- If the bug hit, check the defined values
 UNION ALL
 SELECT
     'negative close_value',
