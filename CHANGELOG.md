@@ -8,3 +8,4 @@ All notable changes to CRM + Sales Warehouse will be documented in this file.
 - Community health files including `FUNDING.yml`, bug and feature issue templates, and pull request template.
 - Release Drafter workflow and semantic changelog configuration.
 - Enhanced CI pipeline (`ci.yml`) with `PYTHONPATH` resolution for robust Airflow DAG and Pytest validation.
+- Workflow diagram of the project is added in 'README.md'.
