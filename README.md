@@ -9,7 +9,6 @@
 [![GitHub Stars](https://img.shields.io/github/stars/surpanch111/CRM-Sales-Warehouse?style=for-the-badge&color=ffd700)](https://github.com/surpanch111/CRM-Sales-Warehouse/stargazers)
 [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-Pink?style=for-the-badge&logo=githubsponsors&logoColor=white&color=ea4aaa)](https://github.com/sponsors/surpanch111)
 
-> [!NOTE]
 
 A modern, production-grade data engineering project featuring a full ETL/ELT pipeline for the **Maven Analytics CRM + Sales** dataset. This platform extracts raw operational data, transforms it into a robust star schema using **dbt**, and delivers actionable insights through a 5-page **Power BI** executive dashboard.
 
