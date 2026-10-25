@@ -197,4 +197,13 @@ We enforce high data standards at every step:
 - **License**: [MIT](LICENSE)
 
 ---
-*Built with ❤️ by Anil Sharma*
+
+## 👨‍💻 Author & Maintainer
+
+**Anil Sharma**
+
+- 🐙 **GitHub**: [@surpanch111](https://github.com/surpanch111)
+- 💼 **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/anil-pancholi01)
+
+---
+*Built with ❤️ by surpanch111 or Anil*
